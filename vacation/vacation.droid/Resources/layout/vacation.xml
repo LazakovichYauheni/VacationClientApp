@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="50dp"
+    android:orientation="horizontal"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/vacationStatusImage"
+        style = "@style/VacationStatusImage"/>
+
+    <TextView
+        android:id="@+id/dateView"
+        style = "@style/VacationDate"
+        android:layout_toRightOf="@+id/vacationStatusImage" />
+
+    <TextView
+        android:id="@+id/vacationType"
+        style="@style/VacationType"
+        android:layout_toRightOf="@id/vacationStatusImage"/>
+
+    <TextView
+        android:id="@+id/vacationStatus"
+        style="@style/VacationStatus"/>
+
+    <View
+        style="@style/VacationMainListView"/>
+
+</RelativeLayout> 

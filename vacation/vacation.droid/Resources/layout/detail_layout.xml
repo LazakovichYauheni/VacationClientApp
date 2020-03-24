@@ -1,0 +1,103 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/DetailToolBar"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_scrollFlags="scroll|enterAlways">
+
+        <TextView
+            style="@style/TextViewRequest"/>
+
+        <Button
+            android:id="@+id/saveButton"
+            style="@style/SaveButton"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        style="@style/LinearLayoutDetail">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            style="@style/ViewPager">
+        </android.support.v4.view.ViewPager>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/dot"
+            style="@style/DotSelector"
+            app:tabBackground="@drawable/dot_selector"/>
+
+        <View
+            android:id="@+id/view1"
+            style="@style/DetailView"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relative1"
+                style="@style/DetailRelativeLayout">
+
+                <TextView
+                    android:id="@+id/dayStart"
+                    style="@style/DetailTextView1"/>
+
+                <TextView
+                    android:id="@+id/monthStart"
+                    style="@style/DetailTextView2"
+                    android:textAllCaps="true"/>
+
+                <TextView
+                    android:id="@+id/yearStart"
+                    style="@style/DetailTextView3"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/DetailRelativeLayout1"
+                android:id="@+id/relative2">
+                <TextView
+                    android:id="@+id/dayEnd"
+                    style="@style/DetailTextView4"
+                    android:layout_width="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/monthEnd"
+                    style="@style/DetailTextView5"
+                    android:textAllCaps="true"/>
+
+                <TextView
+                    android:id="@+id/yearEnd"
+                    style="@style/DetailTextView6"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view1"
+            style="@style/DetailViewLinear" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/recyclerViewDetail"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#39C5D6"/>
+    </LinearLayout>
+
+</LinearLayout>

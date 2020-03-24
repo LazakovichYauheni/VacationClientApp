@@ -1,0 +1,347 @@
+<resources>
+
+  <style name="DetailStyle" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">#39C5D6</item>
+    <item name="spinBars">false</item>
+  </style>
+  <!-- Base application theme. -->
+  <style name="Theme.DesignDemo" parent="Base.Theme.DesignDemo"/>
+
+  <style name="Base.Theme.DesignDemo" parent="@style/Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">#1bcece</item>
+    <item name="colorPrimaryDark">#18B9B9</item>
+    <item name="android:windowBackground">@color/window_background</item>
+  </style>
+  <style name="AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+  </style>
+  <style name="My" parent="@style/Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">#1bcece</item>
+    <item name="drawerArrowStyle">@style/MyDrawerArrowStyle</item>
+  </style>
+  <style name="MyDrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+    <item name="color">#F5F5F5</item>
+    <item name="spinBars">true</item>
+  </style>
+  <style name="MyTheme.Splash" parent ="@style/Theme.AppCompat.Light.NoActionBar">
+    <item name="android:windowBackground">@drawable/splash_bg</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowFullscreen">true</item>
+  </style>
+  <style name="AppTheme.NoActionBar">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+  </style>
+  <style name="ErrorTextViewStyle" parent="android:style/Widget.TextView" >
+    <item name="android:textAlignment">center</item>
+    <item name="android:textColor">#ffff0000</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_gravity">center</item>
+    <item name="android:layout_width">800px</item>
+    <item name="android:background">#ffffff</item>
+    <item name="android:padding">30dp</item>
+    <item name="android:textSize">11.dp</item>
+    <item name="android:layout_marginTop">-20dp</item>
+    <item name="android:layout_marginBottom">20dp</item>
+  </style>
+  <style name="authorizationEditText" parent="android:style/Widget.EditText" >
+    <item name="android:layout_width">800px</item>
+    <item name="android:layout_gravity">center</item>
+    <item name="android:layout_height">50dp</item>
+    <item name="android:background">#ffffff</item>
+    <item name="android:padding">10dp</item>
+    <item name="android:textColorHint">#aaa</item>
+    <item name="android:textSize">45px</item>
+  </style>
+  <style name="VacationDate" parent="android:style/Widget.EditText">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:paddingLeft">10dp</item>
+    <item name="android:paddingTop">20dp</item>
+    <item name="android:background">#FFFFFF</item>
+    <item name="android:text">Date</item>
+    <item name="android:textAllCaps">true</item>
+    <item name="android:textColor">#39C5D6</item>
+    <item name="android:textSize">22dp</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:fontFamily">@font/trade_gothic_bold_1</item>
+  </style>
+  <style name="VacationType">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:lineSpacingExtra">3dp</item>
+    <item name="android:paddingLeft">10dp</item>
+    <item name="android:paddingTop">45dp</item>
+    <item name="android:text">VacationType</item>
+    <item name="android:textColor">#AAAAAA</item>
+    <item name="android:textSize">18dp</item>
+    <item name="android:fontFamily">sans</item>
+  </style>
+  <style name="VacationStatus">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_alignParentRight">true</item>
+    <item name="android:layout_centerVertical">true</item>
+    <item name="android:layout_marginRight">10dp</item>
+    <item name="android:lineSpacingExtra">3dp</item>
+    <item name="android:paddingLeft">25dp</item>
+    <item name="android:paddingTop">5dp</item>
+    <item name="android:text">VacationStatus</item>
+    <item name="android:textColor">#AAAAAA</item>
+    <item name="android:textSize">18dp</item>
+    <item name="android:fontFamily">sans</item>
+  </style>
+  <style name="NavigationViewMainList">
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:layout_width">290dp</item>
+    <item name="android:layout_gravity">start</item>
+    <item name="android:fitsSystemWindows">true</item>
+    <item name="android:background">#cccccc</item>
+  </style>
+  <style name="ImageViewMainList">
+    <item name="android:layout_height">120dp</item>
+    <item name="android:layout_width">120dp</item>
+    <item name="android:layout_centerInParent">true</item>
+    <item name="android:layout_margin">10dp</item>
+    <item name="android:gravity">center</item>
+  </style>
+  <style name="TextViewDobkin">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:background">#ffffff</item>
+    <item name="android:textSize">20dp</item>
+    <item name="android:layout_centerHorizontal">true</item>
+    <item name="android:layout_margin">10dp</item>
+    <item name="android:text">Arkadiy Dobkin</item>
+    <item name="android:textColor">#39C5D6</item>
+  </style>
+  <style name="TextViewMainList1">
+    <item name="android:layout_height">50dp</item>
+    <item name="android:layout_width">290dp</item>
+    <item name="android:background">#fafafa</item>
+    <item name="android:textSize">20dp</item>
+    <item name="android:gravity">right</item>
+    <item name="android:paddingTop">10dp</item>
+    <item name="android:text">All</item>
+    <item name="android:paddingRight">20dp</item>
+  </style>
+  <style name="TextViewMainList2">
+    <item name="android:layout_height">50dp</item>
+    <item name="android:layout_width">290dp</item>
+    <item name="android:background">#fafafa</item>
+    <item name="android:textSize">20dp</item>
+    <item name="android:gravity">right</item>
+    <item name="android:paddingTop">10dp</item>
+    <item name="android:text">Approved</item>
+    <item name="android:paddingRight">20dp</item>
+  </style>
+  <style name="TextViewMainList3">
+    <item name="android:layout_height">50dp</item>
+    <item name="android:layout_width">290dp</item>
+    <item name="android:background">#fafafa</item>
+    <item name="android:textSize">20dp</item>
+    <item name="android:gravity">right</item>
+    <item name="android:paddingTop">10dp</item>
+    <item name="android:text">Closed</item>
+    <item name="android:paddingRight">20dp</item>
+  </style>
+  
+  <style name="VacationMainListView">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">0.1dp</item>
+    <item name="android:background">#aaaaaa</item>
+    <item name="android:layout_marginTop">82.5dp</item>
+    <item name="android:layout_marginLeft">50dp</item>
+  </style>
+
+  <style name="VacationStatusImage">
+    <item name="android:layout_width">60dp</item>
+    <item name="android:layout_height">60dp</item>
+    <item name="android:layout_alignParentLeft">true</item>
+    <item name="android:layout_centerVertical">true</item>
+  </style>
+  <style name="LoginEditText" parent="authorizationEditText" >
+    <item name="android:hint">Login</item>
+  </style>
+  <style name="PasswordEditText" parent="authorizationEditText" >
+    <item name="android:hint">Password</item>
+  </style>
+  <style name="LoginButtonStyle" parent="android:style/Widget.Button">
+    <item name="android:layout_width">630px</item>
+    <item name="android:layout_gravity">center</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_below">@id/password</item>
+    <item name="android:layout_marginTop">10dp</item>
+    <item name="android:background">#1bcece</item>
+    <item name="android:text">SIGN IN</item>
+    <item name="android:textSize">50px</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textColor">#ffffff</item>
+  </style>
+  <style name="TextViewRequest">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_gravity">center</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:text">Request</item>
+    <item name="android:textSize">16dp</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textColor">#ffffff</item>
+    <item name="android:gravity">center</item>
+  </style>
+  <style name="SaveButton">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_gravity">center_horizontal|right</item>
+    <item name="android:textColor">#FFFFFF</item>
+    <item name="android:background">#39C5D6</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:text">Save</item>
+  </style>
+  <style name="ViewPager">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">150dp</item>
+  </style>
+  <style name="LinearLayoutDetail">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:orientation">vertical</item>
+  </style>
+  <style name="DotSelector">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">20dp</item>
+    <item name="android:layout_marginBottom">5dp</item>
+    <item name="tabGravity">center</item>
+    <item name="tabIndicatorHeight">0dp</item>
+    <item name="tabPaddingStart">7dp</item>
+    <item name="tabPaddingEnd">7dp</item>
+  </style>
+  <style name="VacationTypeForDetail">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textAlignment">center</item>
+    <item name="android:textSize">25dp</item>
+    <item name="android:fontFamily">@font/trade_gothic_bold</item>
+  </style>
+  <style name="DetailToolBar">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">40dp</item>
+    <item name="android:background">#39C5D6</item>
+  </style>
+  <style name="ProfileImage">
+    <item name="android:layout_width">100dp</item>
+    <item name="android:layout_height">100dp</item>
+  </style>
+  <style name="DetailView">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">1dp</item>
+    <item name="android:background">#39C5D6</item>
+  </style>
+
+  <style name="DetailRelativeLayout">
+    <item name="android:layout_width">210dp</item>
+    <item name="android:layout_height">100dp</item>
+    <item name="android:orientation">vertical</item>
+    <item name="android:layout_marginBottom">0.0dp</item>
+  </style>
+  <style name="DetailRelativeLayout1">
+    <item name="android:layout_width">210dp</item>
+    <item name="android:layout_height">100dp</item>
+    <item name="android:orientation">vertical</item>
+    <item name="android:layout_marginBottom">0.0dp</item>
+  </style>
+  <style name="DetailTextView1">
+    <item name="android:layout_width">100dp</item>
+    <item name="android:layout_height">100dp</item>
+    <item name="android:layout_marginLeft">20dp</item>
+    <item name="android:text">20</item>
+    <item name="android:layout_marginTop">10dp</item>
+    <item name="android:textAlignment">center</item>
+    <item name="android:textSize">70dp</item>
+    <item name="android:textColor">#39C5D6</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:fontFamily">@font/trade_gothic_bold_1</item>
+
+  </style>
+  <style name="DetailTextView2">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginLeft">120dp</item>
+    <item name="android:layout_marginTop">20dp</item>
+    <item name="android:text">MAR</item>
+    <item name="android:textAlignment">center</item>
+    <item name="android:textSize">30dp</item>
+    <item name="android:textColor">#39C5D6</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:layout_gravity">left</item>
+    <item name="android:fontFamily">@font/trade_gothic_bold</item>
+  </style>
+  <style name="DetailTextView3">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginLeft">120dp</item>
+    <item name="android:layout_marginTop">55dp</item>
+    <item name="android:text">2017</item>
+    <item name="android:textAlignment">center</item>
+    <item name="android:textSize">20dp</item>
+    <item name="android:textColor">#39C5D6</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:layout_gravity">left</item>
+    <item name="android:fontFamily">@font/trade_gothic_bold</item>
+  </style>
+  <style name="DetailTextView4">
+    <item name="android:layout_width">100dp</item>
+    <item name="android:layout_height">100dp</item>
+    <item name="android:layout_marginLeft">20dp</item>
+    <item name="android:text">20</item>
+    <item name="android:layout_marginTop">10dp</item>
+    <item name="android:textAlignment">center</item>
+    <item name="android:textSize">70dp</item>
+    <item name="android:textColor">#A0CC4B</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:fontFamily">@font/trade_gothic_bold_1</item>
+  </style>
+  <style name="DetailTextView5">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginLeft">110dp</item>
+    <item name="android:layout_marginTop">20dp</item>
+    <item name="android:text">MAR</item>
+    <item name="android:textAlignment">center</item>
+    <item name="android:textSize">30dp</item>
+    <item name="android:textColor">#A0CC4B</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:layout_gravity">left</item>
+    <item name="android:fontFamily">@font/trade_gothic_bold</item>
+  </style>
+  <style name="DetailTextView6">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginLeft">110dp</item>
+    <item name="android:layout_marginTop">55dp</item>
+    <item name="android:text">2017</item>
+    <item name="android:textAlignment">center</item>
+    <item name="android:textSize">20dp</item>
+    <item name="android:textColor">#A0CC4B</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:layout_gravity">left</item>
+    <item name="android:fontFamily">@font/trade_gothic_bold</item>
+  </style>
+  <style name="DetailViewLinear">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">1dp</item>
+    <item name="android:background">#39C5D6</item>
+  </style>
+  <style name="RadioButtonStyle" parent="AppTheme">
+    <item name="android:paddingLeft">17dp</item>
+    <item name="colorControlNormal">#AAAA</item>
+    <item name="colorAccent">#A0CC4B</item>
+  </style>
+
+  <style name="AppTheme.AppBarOverlay" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+  <style name="AppTheme.PopupOverlay" parent="@style/ThemeOverlay.AppCompat.Light" />
+
+</resources>
